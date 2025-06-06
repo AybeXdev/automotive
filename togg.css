@@ -1,0 +1,101 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('./bg.png');
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    color: #FFF;
+    text-align: center;
+}
+
+.container {
+    padding: 50px;
+}
+
+.banner-wrapper {
+    position: relative;
+    display: flex; /* Görselin tam ortalanmasını sağlamak için flex kullan */
+    justify-content: center; /* Yatayda merkeze al */
+    align-items: center; /* Dikeyde merkeze al */
+}
+
+.banner {
+    width: 85%; /* Görseli biraz küçültmek */
+    max-height: 350px; /* Daha dengeli bir boyut */
+    object-fit: cover;
+    object-position: center; /* Görseli tam ortalamak için ekledik */
+    border-radius: 20px; /* Kenarları biraz daha ovalleştirmek */
+    transition: ease 0.5s;
+}
+
+.banner:hover {
+    transform: scale(1.05); /* Üzerine gelince hafif büyüme efekti */
+}
+
+
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(255, 255, 255, 0.1)); /* Yavaş geçişli efekt */
+    border-radius: 10px;
+}
+
+h1 {
+    font-size: 40px;
+    margin-top: 20px;
+}
+
+.desc {
+    font-size: 18px;
+    margin: 20px 0;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.specs {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+   
+}
+
+.spec {
+    width: 250px;
+    padding: 10px;
+    border: 1px solid red;
+    border-radius: 10px;
+    background-color: rgba(0,0,0,0.7);
+    
+}
+.spec:hover{
+    transform: scale(1.05);
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 28px;
+    background-color: #FFF;
+    color: #000;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: ease 0.5s;
+}
+
+.btn:hover {
+    background-color: red;
+    color: #FFF;
+    transform: scale(1.10);
+}

@@ -1,0 +1,165 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100%;
+    min-height: 100vh;
+    padding: 5%;
+    background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url(./bg.png);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+}
+
+.navbar {
+    height: 12%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.btn {
+    padding: 12px 28px;
+    font-size: 12px;
+    font-weight: 700;
+    margin-top: 30px;
+    cursor: pointer;
+    color: #000;
+    background-color: #FFF;
+    border-radius: 20px;
+    border: 1px solid red;
+    text-decoration: none;
+    transition: ease 0.5s;
+}
+
+.btn:hover {
+    background-color: #000;
+    color: #FFF;
+    border-color: #FFF;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    transition: ease 0.5s;
+}
+
+nav ul li a:hover {
+    color: #000;
+}
+
+.row {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    height: 88%;
+    justify-content: space-between;
+}
+
+.col {
+    flex-basis: 50%;
+}
+
+.col.left {
+    text-align: left;
+    color: #FFF; /* Beyaz metin */
+}
+
+.cards {
+    display: flex;
+    justify-content: center; /* Ortalayıp bozulmayı engelle */
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.card {
+    width: 220px;
+    height: 250px;
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+    padding: 15px 25px;
+    cursor: pointer;
+    border: 1px solid red;
+    position: relative;
+    margin: 10px;
+    transition: ease 0.5s;
+}
+
+.card .card-head {
+    background-color: rgba(0,0,0,0.7);
+    color: #FFF;
+    border-radius: 6px;
+    padding: 6px;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    border-color: #FFF;
+}
+
+.card .card-bottom {
+    position: absolute;
+    bottom: 26px;
+}
+
+.card.card-1 {
+    background-image: url(./pic-1.png);
+}
+
+.card.card-2 {
+    background-image: url(./pic-2.png);
+}
+
+.card.card-3 {
+    background-image: url(./pic-3.png);
+}
+
+.card.card-4 {
+    background-image: url(./pic-4.png);
+}
+
+/* ✅ Responsive Bozulmayı Önleme */
+@media (max-width: 768px) {
+    .row {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .cards {
+        justify-content: center;
+    }
+
+    h1 {
+        font-size: 60px;
+    }
+
+    .col {
+        flex-basis: 100%;
+    }
+}
+
+@media (max-width: 600px) {
+    .navbar nav ul {
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+    }
+}
+h1{
+     color: #FFF; font-size: 75px; 
+    } 
+.desc{
+     font-size: 16px; color: #FFF;
+}

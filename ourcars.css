@@ -1,0 +1,61 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('./bg.png');
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    color: #FFF;
+    text-align: center;
+}
+
+.container {
+    padding: 50px;
+}
+
+h1 {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.car-list {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.car {
+    width: 250px;
+    padding: 10px;
+    border: 1px solid red;
+    border-radius: 10px;
+    background-color: rgba(0,0,0,0.7);
+    text-align: center;
+}
+
+.car img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 12px 28px;
+    background-color: #FFF;
+    color: #000;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: ease 0.5s;
+}
+
+.btn:hover {
+    background-color: red;
+    color: #FFF;
+}

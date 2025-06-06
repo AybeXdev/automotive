@@ -1,0 +1,57 @@
+/* Genel Stil */
+body {
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('./bg.png');
+    text-align: center;
+    color: #FFF;
+}
+
+/* Banner */
+.banner-wrapper {
+    position: relative;
+    display: flex; /* Görselin tam ortalanmasını sağlamak için flex kullan */
+    justify-content: center; /* Yatayda merkeze al */
+    align-items: center; /* Dikeyde merkeze al */
+}
+
+.banner {
+    width: 80%; /* Görseli biraz küçültmek */
+    max-height: 350px; /* Daha dengeli bir boyut */
+    object-fit: cover;
+    object-position: center; /* Görseli tam ortalamak için ekledik */
+    border-radius: 20px; /* Kenarları biraz daha ovalleştirmek */
+    transition: ease 0.5s;
+}
+
+.banner:hover {
+    transform: scale(1.05); /* Üzerine gelince hafif büyüme efekti */
+}
+
+
+/* İçerik */
+.specs {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.spec {
+    width: 250px;
+    padding: 10px;
+    border: 1px solid red;
+    border-radius: 10px;
+    background-color: rgba(0,0,0,0.7);
+}
+
+.btn {
+    padding: 12px 28px;
+    background-color: #FFF;
+    color: #000;
+    border-radius: 10px;
+    transition: ease 0.5s;
+}
+
+.btn:hover {
+    background-color: red;
+    color: #FFF;
+}
