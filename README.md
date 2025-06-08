@@ -1,2 +1,4 @@
 # automotive
-kendi geliştirdim bastit bir proje
+## UYARI  !!! 
+- BU SITE SADECE CANIM SIKILINCA ZAMANA KARŞI YARIŞIP YAPTIM SITEDIR
+- BAŞKA HİÇBİR AMACA HİZMET ETMEMEKTEDİR
